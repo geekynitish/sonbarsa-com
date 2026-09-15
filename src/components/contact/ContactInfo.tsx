@@ -1,17 +1,11 @@
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    value: "lali@sonbarsa.com",
-    link: "mailto:lali@sonbarsa.com",
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    value: "+91141-6761830",
-    link: "tel:+91141-6761830",
+    value: "info@sonbarsa.com",
+    link: "mailto:info@sonbarsa.com",
   },
   {
     icon: MapPin,
@@ -45,7 +39,7 @@ export const ContactInfo = () => (
     <section className="py-8 md:py-10 border-t border-border">
       <div className="tg-container max-w-[640px]">
         <h2 className="sr-only">Contact information</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           {contactInfo.map((info) => (
             <div key={info.title}>
               <info.icon className="w-6 h-6 text-primary mx-auto mb-2.5" strokeWidth={1.75} />

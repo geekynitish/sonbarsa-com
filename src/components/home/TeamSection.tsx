@@ -2,7 +2,7 @@ import { Linkedin, X } from "lucide-react";
 
 const team = [
   {
-    name: "Satya Prakash",
+    name: "Prakash Y",
     role: "Chief Executive Officer",
     linkedin: "",
     twitter: "",
