@@ -4,14 +4,14 @@ compatibility_date = "2024-11-01"
 account_id = "5f24d6d0670efc9831c1ecef7b7a2871"
 
 # R2 bucket that serves img.sonbarsa.com. Confirmed via `wrangler r2 bucket
-# list` on the account hosting sonbarsa-digital-growth-1 (2026-09-01) — the
+# list` on the account hosting sonbarsa-com (2026-09-01) — the
 # earlier guessed name "sonbarsa-img" was wrong.
 [[r2_buckets]]
 binding = "IMG_BUCKET"
 bucket_name = "imgsonbarsa"
 
 [vars]
-GITHUB_REPO = "geekynitish/sonbarsa-digital-growth-1"
+GITHUB_REPO = "geekynitish/sonbarsa-com"
 PUBLIC_IMG_HOST = "https://img.sonbarsa.com"
 UPLOAD_PREFIX = "blog"
 ALLOWED_ORIGINS = "https://sonbarsa.com,https://www.sonbarsa.com,http://localhost:8080"

@@ -14,7 +14,7 @@
 // Bindings (wrangler.toml):
 //   IMG_BUCKET       R2 bucket binding for the bucket serving img.sonbarsa.com
 // Vars:
-//   GITHUB_REPO       "owner/repo", e.g. "geekynitish/sonbarsa-digital-growth-1"
+//   GITHUB_REPO       "owner/repo", e.g. "geekynitish/sonbarsa-com"
 //   ALLOWED_ORIGINS   comma-separated list of allowed browser origins
 //   PUBLIC_IMG_HOST   e.g. "https://img.sonbarsa.com"
 //   UPLOAD_PREFIX     key prefix for CMS uploads, e.g. "blog"

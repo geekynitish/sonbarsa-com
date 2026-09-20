@@ -9,6 +9,7 @@ const footerLinks = {
     { name: "Our Team", href: "/about#team" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Tech Blog", href: "https://blog.sonbarsa.com/" },
+    { name: "Know", href: "https://know.sonbarsa.com/" },
   ],
   services: [
     { name: "AI & Machine Learning", href: "/services/ai-ml" },
@@ -103,16 +104,21 @@ export const Footer = () => {
           <div>
             <p className="text-sm font-bold mb-2.5">More</p>
             <ul>
-              {footerLinks.more.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="block py-1.5 text-[14px] leading-[23px] text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              {footerLinks.more.map((link) => {
+                const isExternal = link.href.startsWith("http");
+                return (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
+                      className="block py-1.5 text-[14px] leading-[23px] text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

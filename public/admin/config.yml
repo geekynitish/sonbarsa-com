@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: geekynitish/sonbarsa-digital-growth-1
+  repo: geekynitish/sonbarsa-com
   branch: astro-migration
   # OAuth handshake origin — the sonbarsa-decap-oauth Worker.
   base_url: https://sonbarsa-decap-oauth.nitish.workers.dev
